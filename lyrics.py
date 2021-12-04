@@ -17,3 +17,5 @@ def get_lyric( artist, title):
         pass
 
     return song
+
+r = requests.get('-c mlp2016-7-msd')

@@ -1,13 +1,19 @@
-from lyrics import get_lyric
 
-artist = "Beatles"
-title= "Across the Universe"
 
-song = get_lyric(artist, title)
+#artist = "Beatles"
+#title= "Across the Universe"
 
-print("{} by {}:".format(title, artist))
-print("{}".format(song))
 from textblob import TextBlob
-b = TextBlob("get_lyric")
+b = TextBlob('song1')
 b.detect_language()
-print ("The language of the song is ", b.detect_language())
+
+
+import argparse as ap
+
+parser = ap.ArgumentParser()
+parser.add_argument("artist1", help="First artist", type= str)
+parser.add_argument("song1", help="Song of the first artist", type= str)
+args = parser.parse_args()
+artist1=args.artist1
+song1=args.song1
+print ("the language of this song is",b.detect_language)
