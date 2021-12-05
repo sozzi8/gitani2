@@ -2,6 +2,8 @@ from lyrics import get_lyric
 from textblob import TextBlob
 import argparse as ap
 
+#pip install -U textblob
+#python -m textblob.download_corpora
 
 parser = ap.ArgumentParser()
 parser.add_argument("artist", help="First artist", type= str)
