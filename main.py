@@ -1,23 +1,57 @@
+"""
+This is the main file where we created
+the interaction between the user and the
+database of guitarists and bands.
+We use the argparse module to let the user
+put the name of the song and the artist.
+
+We also provide a functionality with textblob
+in order to output the language of the song.
+
+"""
 from lyrics import get_lyric
 from textblob import TextBlob
+import csv_file
 import argparse as ap
+
+
+csv_path = 'reader.csv'
+
 
 #pip install -U textblob
 #python -m textblob.download_corpora
 
-parser = ap.ArgumentParser()
-parser.add_argument("artist", help="First artist", type= str)
-parser.add_argument("song", help="Song of the first artist", type= str)
+parser = ap.ArgumentParser(description = "the program" +
+                                        "let you put the name "+
+                                        "of an artist and his song "+
+                                        "in order to retrieve the"+
+                                        "correspondant lyric..."+
+                                        "please wrap the argument"+
+                                        "around quotes")
+parser.add_argument("artist", help="Please put the name of the artist", type= str)
+parser.add_argument("title", help="Please put the name of a song of the artist", type= str)
 args = parser.parse_args()
 artist=args.artist
-song=args.song
+title=args.title
 
-song = get_lyric(artist, song)
+song = get_lyric(artist, title)
 
-print("{} by {}:".format(song, artist))
+
+
+print("{} by {}:".format(title, artist))
 print("{}".format(song))
+#print(type(song)) we checked wehter the lyric was in form of a string or not to see if the
+# error was that, anyway the function detect language doesn't work with italian song
 
 
-text1= artist + song
-lan1= TextBlob(text1)
-print("the language of the song is:", lan1.detect_language())
+
+text1= TextBlob(song)
+#print("the language of the song is:", text1.detect_language())
+
+"""
+return the lyric of the last song you searched for
+"""
+if __name__ == '__main__':
+    csv_file. write_data(csv_path, args.artist, args.title, song)
+
+#print(text1.translate(to = 'es'))
