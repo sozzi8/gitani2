@@ -39,12 +39,7 @@ song = get_lyric(artist, title) #lyric function to print the text of the selecte
 print("{} by {}:".format(title, artist))
 print("{}".format(song))
 #print(type(song)) we checked wehter the lyric was in form of a string or not to see if the
-# error was that, anyway the function detect language doesn't work with italian song
 
-
-
-text1= TextBlob(song)
-#print("the language of the song is:", text1.detect_language())
 
 #use textblob library and detect_language function to determine the language of the song
 text1= artist + title
