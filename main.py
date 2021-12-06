@@ -5,19 +5,19 @@ import argparse as ap
 #pip install -U textblob
 #python -m textblob.download_corpora
 
-parser = ap.ArgumentParser()
+parser = ap.ArgumentParser() #argparse to insert title and artist's name
 parser.add_argument("artist", help="First artist", type= str)
-parser.add_argument("song", help="Song of the first artist", type= str)
+parser.add_argument("title", help="Song of the first artist", type= str)
 args = parser.parse_args()
 artist=args.artist
-song=args.song
+title=args.title
 
-song = get_lyric(artist, song)
+song = get_lyric(artist, title) #lyric function to print the text of the selected song
 
-print("{} by {}:".format(song, artist))
+print("{} by {}:".format(title, artist))
 print("{}".format(song))
 
-
-text1= artist + song
+#use textblob library and detect_language function to determine the language of the song
+text1= artist + title
 lan1= TextBlob(text1)
 print("the language of the song is:", lan1.detect_language())
