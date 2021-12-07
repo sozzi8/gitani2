@@ -46,12 +46,16 @@ print("{}".format(song))
 lang= detect(song)
 print("the language of the song is:", lang)
 
+from playlist.py import my_playlist
+my_playlist()
+"""
 parser.add_argument("-l", "--like", action="append", help="add a new song to playlist")
 args = parser.parse_args()
 like=args.like
 
 if args.like:
     print("add to likes")
+"""
 
 """
 return the lyric of the last song you searched for
