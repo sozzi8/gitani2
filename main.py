@@ -10,12 +10,9 @@ in order to output the language of the song.
 
 """
 from lyrics import get_lyric
-from textblob import TextBlob
+from langdetect import detect
 import csv_file
 import argparse as ap
-
-#pip install -U textblob
-#python -m textblob.download_corpora
 
 csv_path = 'reader.csv'
 
@@ -44,9 +41,8 @@ print("{}".format(song))
 
 
 #use textblob library and detect_language function to determine the language of the song
-text1= artist + title
-lan1= TextBlob(song)
-print("the language of the song is:", lan1.detect_language())
+lang= detect(song)
+print("the language of the song is:", lang)
 
 parser.add_argument("-l", "--like", action="append", help="add a new song to playlist")
 args = parser.parse_args()
