@@ -39,17 +39,10 @@ print("{} by {}:".format(title, artist))
 print("{}".format(song))
 #we checked wether the lyric was in form of a string or not to see if the
 
-
-#use textblob library and detect_language function to determine the language of the song
+#use langdetect library and detect to determine the language of the song
 lang= detect(song)
 print("the language of the song is:", lang)
 
-parser.add_argument("-l", "--like", action="append", help="add a new song to playlist")
-args = parser.parse_args()
-like=args.like
-
-if args.like:
-    print("add to likes")
 
 """
 return the lyric of the last song you searched for
