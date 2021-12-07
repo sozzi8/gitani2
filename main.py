@@ -14,6 +14,8 @@ from langdetect import detect
 import csv_file
 import argparse as ap
 
+#pip install langdetect
+
 csv_path = 'reader.csv'
 
 
@@ -40,7 +42,7 @@ print("{}".format(song))
 #we checked wether the lyric was in form of a string or not to see if the
 
 
-#use textblob library and detect_language function to determine the language of the song
+#use detect language library to determine the language of the selected song
 lang= detect(song)
 print("the language of the song is:", lang)
 
