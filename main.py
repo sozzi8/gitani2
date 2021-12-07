@@ -46,8 +46,19 @@ print("{}".format(song))
 lang= detect(song)
 print("the language of the song is:", lang)
 
-from playlist.py import my_playlist
-my_playlist()
+mylist = []
+parser = argparse.ArgumentParser()
+parser.add_argument("-l",'--like', help= "messaggio", type=str, Default= "no", choices= ["si","no"])
+args = parser.parse_args()
+
+pref=args.like
+    
+if pref== "si":
+    mylist+= [title]
+    print("you added a song to your playlist")
+    print(mylist)
+
+
 """
 parser.add_argument("-l", "--like", action="append", help="add a new song to playlist")
 args = parser.parse_args()

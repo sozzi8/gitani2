@@ -1,18 +1,18 @@
 import argparse
 
+
 def my_playlist():
-    mylist = []
     parser = argparse.ArgumentParser()
-    parser.add_argument('--like', help= "type title and artist's name", type=str, required=True)
+    parser.add_argument("-l",'--like', help= "messaggio", type=str, default= "no", choices= ["si","no"])
     args = parser.parse_args()
 
     pref=args.like
-    # Print "Hello" + the user input argument
+        # Print "Hello" + the user input argument
 
 
-    if args.like:
-        mylist+= [pref]
+    if pref== "si":
+        mylist+= [title]
         print("you added a song to your playlist")
         print(mylist)
-    
+
 my_playlist()
