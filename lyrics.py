@@ -10,10 +10,17 @@ def get_lyric( artist, title):
 
     r = requests.get(URL)
     data = json.loads(r.text)
-
     try:
         song = data['lyrics']
-    except TypeError:
-        pass
+    except:
 
-    return song
+            if TypeError (artist):
+                print ("The artist name is mispelled ")
+            elif TypeError(title):
+                print("The title of the song is mispelled")
+
+            elif TypeError(artist,title):
+                print( "riprova")
+            else:
+                return song
+        
