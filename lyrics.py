@@ -13,14 +13,14 @@ def get_lyric( artist, title):
     try:
         song = data['lyrics']
     except:
-        if TypeError (artist):
+        if TypeError  in artist:
             print ("The artist name is mispelled ")
             sys.exit()
         elif TypeError(title):
             print("The title of the song is mispelled")
             sys.exit()
         else:
-            print( "riprova")
+            print( "Error 404, check if you have correclty insert the name and the title")
             sys.exit()
 
     return song
