@@ -1,6 +1,6 @@
 import requests
 import json
-
+import sys
 SONG_URL = 'https://api.lyrics.ovh/v1/{}/{}'
 
 
@@ -13,14 +13,14 @@ def get_lyric( artist, title):
     try:
         song = data['lyrics']
     except:
+        if TypeError (artist):
+            print ("The artist name is mispelled ")
+            sys.exit()
+        elif TypeError(title):
+            print("The title of the song is mispelled")
+            sys.exit()
+        else:
+            print( "riprova")
+            sys.exit()
 
-            if TypeError (artist):
-                print ("The artist name is mispelled ")
-            elif TypeError(title):
-                print("The title of the song is mispelled")
-
-            elif TypeError(artist,title):
-                print( "riprova")
-            else:
-                return song
-        
+    return song
