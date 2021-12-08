@@ -31,9 +31,12 @@ parser = ap.ArgumentParser(description = "the program " +
 parser.add_argument("artist", help="Please put the name of the artist", type= str)
 parser.add_argument("title", help="Please put the name of a song of the artist", type= str)
 
+
 args = parser.parse_args()
 artist=args.artist
 title=args.title
+
+
 
 #lyric function to print the text of the selected song
 song = get_lyric(artist, title)
@@ -46,27 +49,12 @@ print("{}".format(song))
 lang= detect(song)
 print("the language of the song is:", lang)
 
-mylist = []
-parser = argparse.ArgumentParser()
-parser.add_argument("-l",'--like', help= "messaggio", type=str, Default= "no", choices= ["si","no"])
-args = parser.parse_args()
-
-pref=args.like
-    
-if pref== "si":
-    mylist+= [title]
-    print("you added a song to your playlist")
-    print(mylist)
+from playlist.py import my_playlist
+my_playlist()
 
 
-"""
-parser.add_argument("-l", "--like", action="append", help="add a new song to playlist")
-args = parser.parse_args()
-like=args.like
 
-if args.like:
-    print("add to likes")
-"""
+
 
 """
 return the lyric of the last song you searched for
