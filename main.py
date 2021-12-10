@@ -44,8 +44,9 @@ print("{} by {}:".format(title, artist))
 print("{}".format(song))
 #we checked wether the lyric was in form of a string or not to see if the
 
-#given the args.like argparse, you can now decide whether you want
-#to add the song to your playlist or not
+"""given the args.like argparse, you can now decide whether you want
+to add the song to your playlist or not"""
+
 if pref== "yes":  #if you type " -l yes"
     myplaylist[artist] =title #it will add the song to your playlist
     print("you added a song to your playlist")
