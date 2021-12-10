@@ -13,6 +13,7 @@ from lyrics import get_lyric
 from langdetect import detect
 import csv_file
 import argparse as ap
+import sys
 
 #pip install langdetect
 
@@ -42,15 +43,18 @@ title=args.title
 song = get_lyric(artist, title)
 print("{} by {}:".format(title, artist))
 print("{}".format(song))
+
+
 #we checked wether the lyric was in form of a string or not to see if the
+
 
 
 #use detect language library to determine the language of the selected song
 lang= detect(song)
 print("the language of the song is:", lang)
 
-from playlist.py import my_playlist
-my_playlist()
+#from playlist.py import my_playlist
+#my_playlist()
 
 
 
