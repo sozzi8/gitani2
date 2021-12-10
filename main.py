@@ -13,11 +13,12 @@ from lyrics import get_lyric
 from langdetect import detect
 import csv_file
 import argparse as ap
+from csv_playlist import database_of_songs
 
 #pip install langdetect
 
 csv_path = 'reader.csv'
-mylist=[]
+myplaylist={}
 
 parser = ap.ArgumentParser(description = "the program " +
                                                 "let you put the name "+
@@ -46,11 +47,14 @@ print("{}".format(song))
 #given the args.like argparse, you can now decide whether you want
 #to add the song to your playlist or not
 if pref== "yes":  #if you type " -l yes"
-    mylist+= [title] #it will add the song to your playlist
+    myplaylist[artist] =title #it will add the song to your playlist
     print("you added a song to your playlist")
-    print(mylist) #and then show it to you
+    print(myplaylist) #and then show it to you
 else:
     print ("you haven't added this song to your playlist") #if you type nothing or " -l no", it won't add the song
+
+
+print (database_of_songs(myplaylist))
 
 #use detect language library to determine
 #the language of the selected song
@@ -62,5 +66,8 @@ return the lyric of the last song you searched for
 """
 if __name__ == '__main__':
     csv_file. write_data(csv_path, args.artist, args.title, song)
+
+
+
 
 #print(text1.translate(to = 'es'))
