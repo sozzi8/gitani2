@@ -2,7 +2,7 @@ import csv
 from lyrics import get_lyric
 import pandas as pd
 
-
+playlist = []
 def database_of_songs(dictionary, name_csv="songs.csv"):
     """
     the following function takes the elements present
@@ -11,12 +11,17 @@ def database_of_songs(dictionary, name_csv="songs.csv"):
     We will be able to add new bands and guitarists then.
     """
 
-    playlist = []
+
     for key, value in dictionary.items():
         playlist.append([key, value])
-    df = pd.DataFrame(playlist, columns=["artist", "title"])
-    df.to_csv(name_csv)
-    return print("database created successfully ")
+        df = pd.DataFrame(playlist, columns=["artist", "title"])
+
+    df1.to_csv("songs.csv")
+
+    return print("database created successfully ", "lista:", playlist )
+    #df.append(playlist)
 
 
-#database_of_songs(myplaylist)
+
+
+#database_of_songs(playlist)
