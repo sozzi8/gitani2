@@ -14,6 +14,7 @@ from langdetect import detect
 import csv_file
 import argparse as ap
 from csv_playlist import database_of_songs
+import csv
 
 #pip install langdetect
 
@@ -51,11 +52,15 @@ if pref== "yes":  #if you type " -l yes"
     myplaylist[artist] =title #it will add the song to your playlist
     print("you added a song to your playlist")
     print(myplaylist) #and then show it to you
+
+
 else:
     print ("you haven't added this song to your playlist") #if you type nothing or " -l no", it won't add the song
 
+database_of_songs(myplaylist)
 
-print (database_of_songs(myplaylist))
+#df= (create_playlist("songs.csv"))
+
 
 #use detect language library to determine
 #the language of the selected song

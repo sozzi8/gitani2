@@ -16,7 +16,6 @@ def database_of_songs(dictionary, name_csv="songs.csv"):
         playlist.append([key, value])
     df = pd.DataFrame(playlist, columns=["artist", "title"])
     df.to_csv(name_csv)
-    
     return print("database created successfully ")
 
 
