@@ -15,6 +15,7 @@ import csv_file
 import argparse as ap
 import sys
 
+from csv_playlist import database_of_songs 
 #pip install langdetect
 
 csv_path = 'reader.csv'
@@ -60,7 +61,7 @@ if pref== "yes":  #if you type " -l yes"
 else:
     print ("you haven't added this song to your playlist") #if you type nothing or " -l no", it won't add the song
 
-#database_of_songs(myplaylist)
+database_of_songs(myplaylist)
 
 #df= (create_playlist("songs.csv"))
 
