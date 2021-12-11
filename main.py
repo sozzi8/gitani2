@@ -13,7 +13,7 @@ from lyrics import get_lyric
 from langdetect import detect
 import csv_file
 import argparse as ap
-from csv_playlist import database_of_songs
+#from csv_playlist import database_of_songs
 
 
 #pip install langdetect
@@ -57,7 +57,7 @@ if pref== "yes":  #if you type " -l yes"
 else:
     print ("you haven't added this song to your playlist") #if you type nothing or " -l no", it won't add the song
 
-database_of_songs(myplaylist)
+#database_of_songs(myplaylist)
 
 #df= (create_playlist("songs.csv"))
 
