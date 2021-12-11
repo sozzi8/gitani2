@@ -1,6 +1,6 @@
 import requests
 import json
-
+import sys
 SONG_URL = 'https://api.lyrics.ovh/v1/{}/{}'
 
 
@@ -13,7 +13,8 @@ def get_lyric( artist, title):
     try:
         song = data['lyrics']
     except:
-        if TypeError:
-            print("ciao che palle")
-            sys.exit()
+        TypeError
+        print("ERROR: something went wrong!")
+        print("Please try again!")
+        sys.exit()
     return song
