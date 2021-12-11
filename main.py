@@ -14,7 +14,7 @@ from langdetect import detect
 import csv_file
 import argparse as ap
 from csv_playlist import database_of_songs
-import csv
+
 
 #pip install langdetect
 
