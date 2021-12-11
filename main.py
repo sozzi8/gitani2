@@ -13,7 +13,7 @@ from lyrics import get_lyric
 from langdetect import detect
 import csv_file
 import argparse as ap
-import sys
+#import sys
 
 #pip install langdetect
 
