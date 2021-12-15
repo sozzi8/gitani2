@@ -1,6 +1,6 @@
 
 # IMPLEMENTATION OF AN API  OF LYRICS
-Lyrics is a project that takes user' inputs from the machine terminal, checks whether or not they are written in the right format and return the lyric and the language of the request song. Also create  csv where the last song you searched for will be inserted. With an optional argument [-l] "Yes" the software will create a csv where you can store your playlist.
+Lyrics is a project that takes users' inputs from the machine terminal, checks whether or not they are written in the right format and then returns the lyric and the language of the requested song. Also, it creates a csv file with the last song that the user has searched, and with the optional argument ```-l "Yes" ``` , it adds to another csv the artist and the title of the song so that the user can have its own playlist.
 
 ## INSTALLATION
 Use the command git clone https://github.com/sozzi8/gitani2.git  in the command prompt of your PC in order to automatically download the whole folder containing the modules. Git should have been previously installed on the machine. In alternative, just download manually the package from Github.
@@ -114,7 +114,7 @@ e pensare che domani sarà sempre meglio!!!!!
 the language of the song is: it
 you haven't added this song to your playlist
 ```
-To add the song to a playlist, the user can access a shortcut ```-l "Yes"``` thanks to ```[argparse]```. This command allows to add the Artist name and Title of the song to the ```song.csv``` file and store a list of songs in order to implement your playlist.
+To add the song to a playlist, the user can access a shortcut ```-l "Yes"``` thanks to ```[argparse]```. This command allows to add the ```Artist``` name and ``` Title ```of the song to the ```song.csv``` file and store a list of songs in order to create a playlist.
 
 
 ```Across the Universe by Beatles:
@@ -206,7 +206,7 @@ you added a song to your playlist
 the language of the song is: en
 ```
 
-
+Finally, using the command ``` python lastsong.py ```, the program returns the last song that the user searched for, and then adds it to the ```reader.csv``` file.
 
 
 ## CONTRIBUTING
