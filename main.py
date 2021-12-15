@@ -60,23 +60,22 @@ except KeyError:
     print("ERROR: something went worng!")
     print("please try again!")
     sys.exit()
-# we checked wether the lyric was in form of a string or not to see if the
+
 
 """given the args.like argparse, you can now decide whether you want
-to add the song to your playlist or not"""
+to add the song to your playlist or not.
+just add -l "yes" in the command line.
+if you don't specify anything or type -l "no",
+the song won't be added to the playlist"""
 
-if pref == "yes":  # if you type " -l yes"
-    myplaylist[artist] = title # it will add the song to your playlist
-    print("you added a song to your playlist")
-    print(myplaylist) # and then show it to you
+if pref == "yes":
+    database_of_songs(artist, title )
+    print ("you have added this song to your playlist") 
 
 
 else:
-    print ("you haven't added this song to your playlist") # if you type nothing or " -l no", it won't add the song
+    print ("you haven't added this song to your playlist")
 
-database_of_songs( myplaylist )
-
-# df= (create_playlist("songs.csv"))
 
 
 """use detect language library to determine
