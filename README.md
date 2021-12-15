@@ -1,8 +1,128 @@
 
-In this repository you can find a file named ```lyrics.py``` that implements the ```get_lyric( artist, title)``` function. It queries the [lyrics.ovh](https://lyricsovh.docs.apiary.io/#) website to fetch the lyrics of a song ```title``` by the specified ```artist```.
-If you run the program, executing the main file with: ```python main.py``` it will give you results similar to the following:
+IMPLEMENTATION OF AN API  OF LYRICS
+Lyrics is a project that takes user' inputs from the machine terminal, checks whether or not they are written in the right format and return the lyric and the language of the request song. Also create  csv where the last song you searched for will be inserted. With an optional argument [-l] "Yes" the software will create a csv where you can store your playlist.
 
-If you run the program but the two main arguments are wrongly typed you will receive an error message like: ```ERROR: something went wrong!, Please try again```
+INSTALLATION
+Use the command git clone https://github.com/sozzi8/gitani2.git  in the command prompt of your PC in order to automatically download the whole folder containing the modules. Git should have been previously installed on the machine. In alternative, just download manually the package from Github.
+
+USAGE
+The aim of the project is to implement the functions of the [lyrics.ovh](https://lyricsovh.docs.apiary.io/#).
+Once the two main arguments has been entered as input, the program will check if they are present inside the API and also if they are correctly write.
+In case there are KeyError the program will return an error message such as: ```ERROR: something went wrong!, Please try again```.
+When the input are both present and correctly typed the program will return the lyric and of the requested song and its associated language. Also providing a CSV file where the Last Song you searched for is stored.
+On the other hand, there could also possibly be an optional argument [l]"Yes" that creates a CSV file where you can create your own playlist and saves all the past researches.
+
+If wanting to execute the program, the command should be written as follows:
+  pyhton main.py "artist" "title"
+Whereas "artist" should be the name of the singer and "title" is the name of the song. For example:
+  python main.py "Vasco Rossi" "Vivere"
+In this case since the input is present and correct, the output will be:
+
+```Vivere by Vasco Rossi:
+Vivere
+è passato tanto tempo
+Vivere!
+è un ricordo senza tempo
+Vivere
+è un po' come perder tempo
+
+Vivere.....e Sorridere!.......
+
+VIVERE!
+
+è passato tanto tempo
+
+VIVERE!
+
+è un ricordo senza tempo
+
+VIVERE!
+
+è un po' come perder tempo
+
+VIVERE....e Sorridere dei guai
+
+così come non hai fatto mai
+
+e poi pensare che domani sarà sempre meglio
+
+OGGI NON HO TEMPO
+
+OGGI VOGLIO STARE SPENTO!
+
+
+
+Vivere!
+
+e sperare di star meglio
+
+Vivere
+
+e non essere mai contento
+
+Vivere
+
+come stare sempre al vento
+
+VIVERE!......COME RIDERE!!!
+
+
+
+VIVERE!
+
+anche se sei morto dentro
+
+VIVERE!
+
+e devi essere sempre contento!
+
+VIVERE!
+
+è come un comandamento
+
+VIVERE..... o SOPRAVVIVERE....
+
+senza perdersi d'animo mai
+
+e combattere e lottare contro tutto contro!.....
+
+OGGI NON HO TEMPO
+
+OGGI VOGLIO STARE SPENTO!.....
+
+
+
+VIVERE
+
+e sperare di star meglio
+
+VIVERE VIVERE
+
+e non essere mai contento
+
+VIVERE VIVERE
+
+e restare sempre al vento a
+
+VIVERE.....e sorridere dei guai
+
+proprio (così) come non hai fatto mai
+
+e pensare che domani sarà sempre meglio!!!!!
+you haven't added this song to your playlist```
+```
+To add the song to a playlist, the user can access a shortcut [-l]"Yes" thanks to [argparse]. This command allows to add the Artist name and Title of the song to a [csv] file and store a list of songs in order to implement your playlist.
+
+
+
+
+CONTRIBUTING
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+LICENSE
+https://www.apache.org/licenses/LICENSE-2.0
 
 
 Note that the project requires the ```json```, ```requests```, ```sys```, ```langdetect```, ```argparse```,```os```, ```unittest```, ```pandas``` and ``` csv```  modules to run.
