@@ -122,7 +122,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## LICENSE
-[APACHE LICENSE, VERSION 2.0] (https://www.apache.org/licenses/LICENSE-2.0)
+[APACHE LICENSE, VERSION 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
 
 Note that the project requires the ```json```, ```requests```, ```sys```, ```langdetect```, ```argparse```,```os```, ```unittest```, ```pandas``` and ``` csv```  modules to run.
