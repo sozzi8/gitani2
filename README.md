@@ -206,6 +206,13 @@ you added a song to your playlist
 the language of the song is: en
 ```
 
+whereas the songs.csv is updated as follows: 
+
+```
+Across the Universe,Beatles
+vivere,vasco rossi
+```
+
 Finally, using the command ``` python lastsong.py ```, the program returns the last song that the user searched for, and then adds it to the ```reader.csv``` file.
 
 
