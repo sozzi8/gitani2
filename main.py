@@ -41,9 +41,9 @@ pref=args.like
 
 
 
-#lyric function to print the text of the selected song
+"""lyric function to both print the text of the selected song
+and send an error message in case of missplelling"""
 
-#by trying the song if the input is mispelled the software will respond with an error message
 try:
     song = get_lyric(artist, title)
     print("{} by {}:".format(title, artist))
@@ -52,7 +52,6 @@ except KeyError:
     print("ERROR: something went wrong!")
     print("please try again!")
     sys.exit()
-#we checked wether the lyric was in form of a string or not to see if the
 
 """given the args.like argparse, you can now decide whether you want
 to add the song to your playlist or not"""
