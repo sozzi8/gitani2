@@ -16,22 +16,26 @@ class TestInput(unittest.TestCase):
         # you should select some valid inputs, for which the output is known
         self.assertEqual(get_lyric(artisttest, titletest),get_lyric("Vasco Rossi","Vivere"))
 
-    # invalid inputs
-    def test_wrong_values(self):
-        artisttest= "Vasco Rossi"
-        titletest= "Vivvvere"
-        artisttest2= "Vasso Rose"
-        titletest2= "Vivere"
+
+
+    # edge inputs (strange)
+    def test_edgy_values(self):
+        artisttest1= "VASCO ROSSI"
+        titletest1= "VIVERE"
+        artisttest2= "VaScO RosSi"
+        titletest2= "ViVEre"
         # you should input wrong data
-        self.assertTrue(get_lyric(artisttest,titletest),get_lyric(artisttest,titletest))
-        self.assertTrue(get_lyric(artisttest2,titletest2),get_lyric(artisttest2,titletest2) )
+        self.assertEqual(get_lyric(artisttest1,titletest1),get_lyric(artisttest1,titletest1))
+        self.assertEqual(get_lyric(artisttest2,titletest2),get_lyric(artisttest2,titletest2) )
 
         # NOTE: the following test passing an empty list will fail!
         # self.assertEqual(return_birthday([]), None)
 
     # corner case: empty string
-    def test_empty_string(self):
-        self.assertEqual(get_lyric("-", "Vivere"),get_lyric("", "Vivere"))
+    def test_wrong_string(self):
+        artisttest3= "- "
+        titletest3= "Vivere"
+        self.assertFalse(get_lyric(artisttest3,titletest3),get_lyric( artisttest3, titletest3))
 
 
 if __name__ == '__main__':
