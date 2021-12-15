@@ -22,12 +22,13 @@ csv_path = 'reader.csv'
 myplaylist = {}
 
 parser = ap.ArgumentParser(description = "the program"+
-                                                "let you put the name"+
-                                                "of an artist and his song"+
-                                                "in order to retrieve the"+
-                                                "correspondant lyric..."+
-                                                "please wrap the argument"+
-                                                "around quotes")
+                           "let you put the name"+
+                           "of an artist and his song"+
+                           "in order to retrieve the"+
+                           "correspondant lyric..."+
+                           "please wrap the argument"+
+                           "around quotes")
+
 parser.add_argument( "artist", help="Please put the name of the artist",
                     type = str)
 parser.add_argument( "title",
