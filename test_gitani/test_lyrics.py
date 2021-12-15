@@ -6,7 +6,7 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from lyrics import get_lyric
 
-
+from csv_file import write_data
 class TestInput(unittest.TestCase):
 
     # smoke test: valid inputs
@@ -32,10 +32,14 @@ class TestInput(unittest.TestCase):
         # self.assertEqual(return_birthday([]), None)
 
     # corner case: empty string
-    def test_wrong_string(self):
-        artisttest3= "- "
-        titletest3= "Vivere"
-        self.assertFalse(get_lyric(artisttest3,titletest3),get_lyric( artisttest3, titletest3))
+#    def test_wrong_string(self):
+        #artisttest3= "- "
+        #titletest3= "Vivere"
+        #self.assertFalse(get_lyric(artisttest3,titletest3),get_lyric( artisttest3, titletest3))
+
+
+
+
 
 
 if __name__ == '__main__':
