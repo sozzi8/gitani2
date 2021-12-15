@@ -7,8 +7,7 @@ def database_of_songs(dictionary, name_csv="songs.csv"):
     """
     the following function takes the elements present
     in the dictionary and places them into a csv file
-    named guitarists.csv that we will use as our database.
-    We will be able to add new bands and guitarists then.
+    named songs.csv that we will use as our playlist.
     """
 
 
@@ -20,7 +19,7 @@ def database_of_songs(dictionary, name_csv="songs.csv"):
     df2.to_csv("songs.csv")
 
     return print("database created successfully ", "lista:", playlist )
-    
+
     df2= pd.DataFrame (df,columns=["artist", "title"])
     result= pd.concat([df,df2], join='inner')
     display(result)
@@ -28,4 +27,5 @@ def database_of_songs(dictionary, name_csv="songs.csv"):
 
 
 
-#database_of_songs(playlist)
+
+# database_of_songs(playlist)
