@@ -112,7 +112,9 @@ e pensare che domani sarà sempre meglio!!!!!
 you haven't added this song to your playlist
 ```
 To add the song to a playlist, the user can access a shortcut ```[-l]``` ```"Yes"``` thanks to ```[argparse]```. This command allows to add the Artist name and Title of the song to a ```[song.csv]``` file and store a list of songs in order to implement your playlist.
-'''Across the Universe by Beatles:
+
+
+```Across the Universe by Beatles:
 Words are flowing out like 
 Endless rain into a paper cup
 They slither wildly as they slip away across the universe.
@@ -196,7 +198,7 @@ Jai Guru Deva
 
 Jai Guru Deva
 you added a song to your playlist
-{'Beatles': 'Across the Universe'}'''
+{'Beatles': 'Across the Universe'}```
 
 
 
