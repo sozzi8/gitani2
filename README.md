@@ -109,6 +109,8 @@ VIVERE.....e sorridere dei guai
 proprio (così) come non hai fatto mai
 
 e pensare che domani sarà sempre meglio!!!!!
+
+the language of the song is: it
 you haven't added this song to your playlist
 ```
 To add the song to a playlist, the user can access a shortcut ```[-l]``` ```"Yes"``` thanks to ```[argparse]```. This command allows to add the Artist name and Title of the song to a ```[song.csv]``` file and store a list of songs in order to implement your playlist.
@@ -199,6 +201,8 @@ Jai Guru Deva
 Jai Guru Deva
 you added a song to your playlist
 {'Beatles': 'Across the Universe'}
+
+the language of the song is: en
 ```
 
 
