@@ -111,7 +111,92 @@ proprio (così) come non hai fatto mai
 e pensare che domani sarà sempre meglio!!!!!
 you haven't added this song to your playlist
 ```
-To add the song to a playlist, the user can access a shortcut ```[-l]``` ```"Yes"``` thanks to ```[argparse]```. This command allows to add the Artist name and Title of the song to a ```[csv]``` file and store a list of songs in order to implement your playlist.
+To add the song to a playlist, the user can access a shortcut ```[-l]``` ```"Yes"``` thanks to ```[argparse]```. This command allows to add the Artist name and Title of the song to a ```[song.csv]``` file and store a list of songs in order to implement your playlist.
+'''Across the Universe by Beatles:
+Words are flowing out like 
+Endless rain into a paper cup
+They slither wildly as they slip away across the universe.
+Pools of sorrow waves of joy
+Are drifting through my opened mind
+Possessing and caressing me.
+
+Jai Guru Deva. Om
+
+
+
+Nothing's gonna change my world
+
+Nothing's gonna change my world
+
+Nothing's gonna change my world
+
+Nothing's gonna change my world
+
+
+
+Images of broken light, which 
+
+Dance before me like a million eyes,
+
+They call me on and on across the universe.
+
+Thoughts meander like a 
+
+Restless wind inside a letter box
+
+They tumble blindly as they make their way across the universe.
+
+Jai Guru Deva. Om
+
+
+
+Nothing's gonna change my world
+
+Nothing's gonna change my world
+
+Nothing's gonna change my world
+
+Nothing's gonna change my world
+
+
+
+Sounds of laughter, shades of life
+
+Are ringing through my opened ears 
+
+Inciting and inviting me.
+
+Limitless undying love, which
+
+Shines around me like a million suns,
+
+It calls me on and on across the universe
+
+Jai Guru Deva, om.
+
+
+
+Nothing's gonna change my world
+
+Nothing's gonna change my world
+
+Nothing's gonna change my world
+
+Nothing's gonna change my world
+
+
+
+Jai Guru Deva
+
+Jai Guru Deva
+
+Jai Guru Deva
+
+Jai Guru Deva
+
+Jai Guru Deva
+you added a song to your playlist
+{'Beatles': 'Across the Universe'}'''
 
 
 
