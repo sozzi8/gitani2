@@ -3,4 +3,4 @@ In this repository you can find a file named ```lyrics.py``` that implements the
 If you run the program, executing the main file with: ```python main.py``` it will give you results similar to the following:
 
 
-Note that the project requires the ```json``` and ```requests``` modules to run.
+Note that the project requires the ```json```, ```requests```, ```sys```, ```langdetect```, ```argparse```, ```pandas``` and ``` csv```  modules to run.
