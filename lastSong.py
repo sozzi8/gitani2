@@ -1,6 +1,6 @@
 """
 In this file we give the user  the possibility to recover the last lyric
-of the song they searched.
+of the song they searched and study different type of error.
 """
 import pandas as pd
 
