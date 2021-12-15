@@ -47,11 +47,8 @@ title = args.title
 pref = args.like
 
 
-
-
-# lyric function to print the text of the selected song
-
-# by trying the song if the input is mispelled the software will respond with an error message
+"""lyric function to both print the text of the selected song
+and send an error message in case of missplelling"""
 try:
     song = get_lyric(artist, title)
     print("{} by {}:".format(title, artist))
@@ -70,7 +67,7 @@ the song won't be added to the playlist"""
 
 if pref == "yes":
     database_of_songs(artist, title )
-    print ("you have added this song to your playlist") 
+    print ("you have added this song to your playlist")
 
 
 else:
@@ -89,4 +86,3 @@ print("the language of the song is:", lang)
 
 if __name__ == '__main__':
     csv_file. write_data(csv_path, args.artist, args.title, song)
-# print(text1.translate(to = 'es'))
