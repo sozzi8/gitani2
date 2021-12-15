@@ -206,7 +206,7 @@ you added a song to your playlist
 the language of the song is: en
 ```
 
-whereas the songs.csv is updated as follows: 
+Whereas the songs.csv file is updated as follows: 
 
 ```
 Across the Universe,Beatles
