@@ -1,5 +1,5 @@
 
-#IMPLEMENTATION OF AN API  OF LYRICS
+# IMPLEMENTATION OF AN API  OF LYRICS
 Lyrics is a project that takes user' inputs from the machine terminal, checks whether or not they are written in the right format and return the lyric and the language of the request song. Also create  csv where the last song you searched for will be inserted. With an optional argument [-l] "Yes" the software will create a csv where you can store your playlist.
 
 ##INSTALLATION
