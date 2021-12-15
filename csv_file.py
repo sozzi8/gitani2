@@ -2,7 +2,7 @@ import csv
 
 
 def create_csv(path):
-    
+
     with open(path, 'w', newline='') as data:
         # create columns
         columns = ['artist', 'data', 'lyric']
@@ -12,7 +12,7 @@ def create_csv(path):
 
 
 def write_data(path, artist, title, lyric):
-
+    # write data into the csv
     try:
         open(path)
 

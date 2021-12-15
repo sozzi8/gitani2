@@ -1,4 +1,7 @@
-# import required package
+"""
+In this file we give the user  the possibility to recover the last lyric
+of the song they searched.
+"""
 import pandas as pd
 
 
@@ -21,9 +24,9 @@ def read_data(path):
         return
 
     print(user_data['lyric'].iloc[-1])
-
-
 # otherwise add lyrics to data
+
+
 if __name__ == '__main__':
     path = 'reader.csv'
     read_data(path)

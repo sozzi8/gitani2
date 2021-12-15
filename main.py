@@ -1,13 +1,15 @@
 """
-This is the main file where we created
-the interaction between the user and the
-database of guitarists and bands.
+This is the main file where we create the interaction
+with the user.
 We use the argparse module to let the user
 put the name of the song and the artist.
 
-We also provide a functionality with textblob
-in order to output the language of the song.
+We provide a functionality that detect the language
+of our lyrics with the librart langdetect.
 
+We then put an optional argument in order to
+let the user have the possibility to save it in
+a playlist.
 """
 from lyrics import get_lyric
 from langdetect import detect
@@ -15,7 +17,7 @@ import csv_file
 import argparse as ap
 import sys
 from csv_playlist import database_of_songs
-# pip install langdetect
+
 
 csv_path = 'reader.csv'
 myplaylist = {}
