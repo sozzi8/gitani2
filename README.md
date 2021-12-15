@@ -109,7 +109,7 @@ VIVERE.....e sorridere dei guai
 proprio (così) come non hai fatto mai
 
 e pensare che domani sarà sempre meglio!!!!!
-you haven't added this song to your playlist```
+you haven't added this song to your playlist
 ```
 To add the song to a playlist, the user can access a shortcut ```[-l]``` ```"Yes"``` thanks to ```[argparse]```. This command allows to add the Artist name and Title of the song to a ```[csv]``` file and store a list of songs in order to implement your playlist.
 
