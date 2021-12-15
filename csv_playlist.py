@@ -14,12 +14,16 @@ def database_of_songs(dictionary, name_csv="songs.csv"):
     for key, value in dictionary.items():
         playlist.append([key, value])
         df = pd.DataFrame(playlist, columns=["artist", "title"])
+    df2= pd.DataFrame (df,columns=["artist", "title"])
+    result= df.append(df2)
+    df2.to_csv("songs.csv")
 
-    df1.to_csv("songs.csv")
+    return print("database created successfully ", "lista:", playlist )
 
-
-    return print("playlist created successfully ", "lista:", playlist )
-    # df.append(playlist)
+    df2= pd.DataFrame (df,columns=["artist", "title"])
+    result= pd.concat([df,df2], join='inner')
+    display(result)
+    result.to_csv("songs.csv")
 
 
 

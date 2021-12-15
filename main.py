@@ -79,8 +79,8 @@ database_of_songs( myplaylist )
 # df= (create_playlist("songs.csv"))
 
 
-# use detect language library to determine
-# the language of the selected song
+"""use detect language library to determine
+the language of the selected song"""
 lang= detect(song)
 print("the language of the song is:", lang)
 
