@@ -7,16 +7,17 @@ Use the command git clone https://github.com/sozzi8/gitani2.git  in the command 
 
 ## USAGE
 The aim of the project is to implement the functions of the [lyrics.ovh](https://lyricsovh.docs.apiary.io/#).
-Once the two main arguments has been entered as input, the program will check if they are present inside the API and also if they are correctly write.
-In case there are KeyError the program will return an error message such as: ```ERROR: something went wrong!, Please try again```.
-When the input are both present and correctly typed the program will return the lyric and of the requested song and its associated language. Also providing a CSV file where the Last Song you searched for is stored.
-On the other hand, there could also possibly be an optional argument [l]"Yes" that creates a CSV file where you can create your own playlist and saves all the past researches.
+Once the two main arguments have been entered as input, the program will check if they are present inside the API, and if they are correctly written.
+In case there are KeyError, the program will return an error message such as: ```ERROR: something went wrong!, Please try again```.
+Whereas when the inputs are both present and correctly typed, the program will return the lyric of the requested song, its associated language, and a CSV file where the Last Song you searched for is stored.
+Moreover,there is the possibility of specifying the optional argument ```-l "Yes" ``` , which lets you save the song in a playlist using a CSV file. 
+Finally, in another CSV file are saved all the past researches.
 
 If wanting to execute the program, the command should be written as follows:
-  pyhton main.py "artist" "title"
-Whereas "artist" should be the name of the singer and "title" is the name of the song. For example:
-  python main.py "Vasco Rossi" "Vivere"
-In this case since the input is present and correct, the output will be:
+  ```pyhton main.py "artist" "title"```
+Where ```artist``` is the name of the singer and ```title``` is the name of the song. For example:
+  ```python main.py "Vasco Rossi" "Vivere"```
+In this case since the input is present and correct, the output will be the lyric of the song and its language
 
 ```Vivere by Vasco Rossi:
 Vivere
@@ -113,7 +114,7 @@ e pensare che domani sarà sempre meglio!!!!!
 the language of the song is: it
 you haven't added this song to your playlist
 ```
-To add the song to a playlist, the user can access a shortcut ```[-l]``` ```"Yes"``` thanks to ```[argparse]```. This command allows to add the Artist name and Title of the song to a ```[song.csv]``` file and store a list of songs in order to implement your playlist.
+To add the song to a playlist, the user can access a shortcut ```-l "Yes"``` thanks to ```[argparse]```. This command allows to add the Artist name and Title of the song to the ```song.csv``` file and store a list of songs in order to implement your playlist.
 
 
 ```Across the Universe by Beatles:
