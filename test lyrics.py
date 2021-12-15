@@ -23,8 +23,8 @@ class TestInput(unittest.TestCase):
         artisttest2= "Vasso Rose"
         titletest2= "Vivere"
         # you should input wrong data
-        self.assertEqual(get_lyric(artisttest,titletest), get_lyric(artisttest,titletest))
-        self.assertEqual(get_lyric(artisttest2,titletest2),get_lyric(artisttest2,titletest2) )
+        self.assertTrue(get_lyric(artisttest,titletest),get_lyric(artisttest,titletest))
+        self.assertTrue(get_lyric(artisttest2,titletest2),get_lyric(artisttest2,titletest2) )
 
         # NOTE: the following test passing an empty list will fail!
         # self.assertEqual(return_birthday([]), None)

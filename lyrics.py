@@ -1,6 +1,6 @@
 import requests
 import json
-import sys
+
 SONG_URL = 'https://api.lyrics.ovh/v1/{}/{}'
 
 
@@ -10,11 +10,11 @@ def get_lyric( artist, title):
 
     r = requests.get(URL)
     data = json.loads(r.text)
+
     try:
         song = data['lyrics']
-    except:
-        TypeError
-        print("ERROR: something went wrong!")
-        print("Please try again!")
-        sys.exit()
+    except TypeError:
+        pass
+        #in the main.py we implemented the response to mispelling error
+
     return song

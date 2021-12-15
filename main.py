@@ -42,11 +42,16 @@ pref=args.like
 
 
 #lyric function to print the text of the selected song
-song = get_lyric(artist, title)
-print("{} by {}:".format(title, artist))
-print("{}".format(song))
 
-
+#by trying the song if the input is mispelled the software will respond with an error message
+try:
+    song = get_lyric(artist, title)
+    print("{} by {}:".format(title, artist))
+    print("{}".format(song))
+except KeyError:
+    print("ERROR: something went worng!")
+    print("please try again!")
+    sys.exit()
 #we checked wether the lyric was in form of a string or not to see if the
 
 """given the args.like argparse, you can now decide whether you want
