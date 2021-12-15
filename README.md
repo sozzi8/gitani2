@@ -2,10 +2,10 @@
 # IMPLEMENTATION OF AN API  OF LYRICS
 Lyrics is a project that takes user' inputs from the machine terminal, checks whether or not they are written in the right format and return the lyric and the language of the request song. Also create  csv where the last song you searched for will be inserted. With an optional argument [-l] "Yes" the software will create a csv where you can store your playlist.
 
-##INSTALLATION
+## INSTALLATION
 Use the command git clone https://github.com/sozzi8/gitani2.git  in the command prompt of your PC in order to automatically download the whole folder containing the modules. Git should have been previously installed on the machine. In alternative, just download manually the package from Github.
 
-##USAGE
+## USAGE
 The aim of the project is to implement the functions of the [lyrics.ovh](https://lyricsovh.docs.apiary.io/#).
 Once the two main arguments has been entered as input, the program will check if they are present inside the API and also if they are correctly write.
 In case there are KeyError the program will return an error message such as: ```ERROR: something went wrong!, Please try again```.
@@ -116,12 +116,12 @@ To add the song to a playlist, the user can access a shortcut ```[-l]``` ```"Yes
 
 
 
-##CONTRIBUTING
+## CONTRIBUTING
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
-##LICENSE
+## LICENSE
 [APACHE LICENSE, VERSION 2.0] (https://www.apache.org/licenses/LICENSE-2.0)
 
 
