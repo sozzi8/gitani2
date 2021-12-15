@@ -114,7 +114,7 @@ e pensare che domani sarà sempre meglio!!!!!
 the language of the song is: it
 you haven't added this song to your playlist
 ```
-To add the song to a playlist, the user can access a shortcut ```-l "Yes"``` thanks to ```[argparse]```. This command allows to add the Artist name and Title of the song to the ```song.csv``` file and store a list of songs in order to implement your playlist.
+To add the song to a playlist, the user can access a shortcut ```-l "Yes"``` thanks to ```[argparse]```. This command allows to add the ```Artist``` name and ``` Title ```of the song to the ```song.csv``` file and store a list of songs in order to create a playlist. Try with: ```python main.py "Beatles" "Across the Universe" -l "yes" ```
 
 
 ```Across the Universe by Beatles:
@@ -206,7 +206,14 @@ you added a song to your playlist
 the language of the song is: en
 ```
 
+Whereas the songs.csv file is updated as follows:
 
+```
+Across the Universe,Beatles
+vivere,vasco rossi
+```
+
+Finally, using the command ``` python lastsong.py ```, the program returns the last song that the user searched has for, and then adds it to the ```reader.csv``` file.
 
 
 ## CONTRIBUTING
