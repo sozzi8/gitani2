@@ -57,7 +57,7 @@ try:
     print("{} by {}:".format(title, artist))
     print("{}".format(song))
 except KeyError:
-    print("ERROR: something went worng!")
+    print("ERROR: something went wrong!")
     print("please try again!")
     sys.exit()
 # we checked wether the lyric was in form of a string or not to see if the
