@@ -5,6 +5,8 @@ SONG_URL = 'https://api.lyrics.ovh/v1/{}/{}'
 
 
 def get_lyric(artist, title):
+    """ Get the lyric from the API
+    """
 
     URL = SONG_URL.format(artist, title)
 

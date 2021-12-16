@@ -6,9 +6,8 @@ import pandas as pd
 
 
 def read_data(path):
-
-    '''Read the latest research.'''
-    # if wrong input, print the type of error
+    '''This function read the latest request
+    and if wrong input, print the type of error'''
     try:
         user_data = pd.read_csv(path, sep=',', header=0)
     except FileNotFoundError:
