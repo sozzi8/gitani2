@@ -28,16 +28,16 @@ parser = ap.ArgumentParser(description="the program" +
                            "please wrap the argument " +
                            "around quotes.")
 
-parser.add_argument( "artist", help="Please put the name of the artist",
+parser.add_argument("artist", help="Please put the name of the artist",
                     type=str)
-parser.add_argument( "title",
+parser.add_argument("title",
                     help="Please put the name of a song of the artist",
                     type=str)
-parser.add_argument( "-l", '--like',
-                    help= "type -l yes to add the song to your playlist",
+parser.add_argument("-l", '--like',
+                    help="type -l yes to add the song to your playlist",
                     type=str,
-                    default= "no",
-                    choices= ["yes","no"])
+                    default="no",
+                    choices=["yes", "no"])
 args = parser.parse_args()
 artist = args.artist
 title = args.title
@@ -69,17 +69,17 @@ the song won't be added to the playlist
 """
 
 if pref == "yes":
-    database_of_songs(artist, title )
-    print ("you have added this song to your playlist")
+    database_of_songs(artist, title)
+    print("you have added this song to your playlist")
 else:
-    print ("you haven't added this song to your playlist")
+    print("you haven't added this song to your playlist")
 
 """
 Use detect language library to determine
 the language of the selected song
 """
 
-lang=detect(song)
+lang = detect(song)
 print("the language of the song is:", lang)
 
 """
