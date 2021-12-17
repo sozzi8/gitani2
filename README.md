@@ -216,10 +216,10 @@ vivere,vasco rossi
 Finally, using the command ``` python lastsong.py ```, the program returns the last song that the user has searched for, and then adds it to the ```reader.csv``` file.
 
 ## TESTS
-We have performed three unittest usng valid, invalid and corner cases. We have verified the mispelling function and the playlist function. See the files ```test_lyrics.py``` , and ``` test_playlist.py  ```.
+We have performed three unittest using valid, invalid and corner cases. We have verified the misspelling function, the playlist function and functions of last song. See the files ```test_lyrics.py``` , ``` test_playlist.py  ``` and ```test_lastSong ```
 
 ## PEP8
-The whole project is written following the PEP8 rules. 
+The whole project is written following the PEP8 rules.
 
 ## CONTRIBUTING
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
