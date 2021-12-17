@@ -215,6 +215,8 @@ vivere,vasco rossi
 
 Finally, using the command ``` python lastsong.py ```, the program returns the last song that the user searched has for, and then adds it to the ```reader.csv``` file.
 
+## TESTS
+We have performed three unittest, one to verify the mispelling function, one for the playlist, and one for adding the last song to the csv file. See the files ```test_lyrics.py``` , ``` test_playlist.py``` , and ```test_lastsong.py```
 
 ## CONTRIBUTING
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
