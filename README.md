@@ -218,6 +218,9 @@ Finally, using the command ``` python lastsong.py ```, the program returns the l
 ## TESTS
 We have performed three unittest usng valid, invalid and corner cases. We have verified the mispelling function, the playlist function, and the adding the last song to the csv file function. See the files ```test_lyrics.py``` , ``` test_playlist.py``` , and ```test_lastsong.py```
 
+## PEP8
+the whole project is written following the PEP8 rules 
+
 ## CONTRIBUTING
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
