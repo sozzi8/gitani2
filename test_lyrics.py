@@ -2,6 +2,7 @@ from lyrics import get_lyric
 import unittest
 import sys
 import os
+import pycodestyle
 
 # add parent folder to path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
