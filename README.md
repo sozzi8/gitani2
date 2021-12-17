@@ -114,7 +114,7 @@ e pensare che domani sarà sempre meglio!!!!!
 the language of the song is: it
 you haven't added this song to your playlist
 ```
-To add the song to a playlist, the user can access a shortcut ```-l "Yes"``` thanks to ah optional argument. This command allows to add the ```Artist``` name and ``` Title ```of the song to the ```song.csv``` file and store a list of songs in order to create a playlist. Try with: ```python main.py "Beatles" "Across the Universe" -l "yes" ```
+To add the song to a playlist, the user can access to the shortcut ```-l "Yes"``` , thanks to an optional argument. This command allows to add the ```Artist``` name and ``` Title ```of the song to the ```song.csv``` file and then store a list of songs in order to create a playlist. Try with: ```python main.py "Beatles" "Across the Universe" -l "yes" ```
 
 
 ```Across the Universe by Beatles:
@@ -216,10 +216,10 @@ vivere,vasco rossi
 Finally, using the command ``` python lastsong.py ```, the program returns the last song that the user has searched for, and then adds it to the ```reader.csv``` file.
 
 ## TESTS
-We have performed three unittest usng valid, invalid and corner cases. We have verified the mispelling function, the playlist function, and the adding the last song to the csv file function. See the files ```test_lyrics.py``` , ``` test_playlist.py``` , and ```test_lastsong.py```
+We have performed three unittest usng valid, invalid and corner cases. We have verified the mispelling function and the playlist function. See the files ```test_lyrics.py``` , and ``` test_playlist.py  ```.
 
 ## PEP8
-the whole project is written following the PEP8 rules 
+The whole project is written following the PEP8 rules. 
 
 ## CONTRIBUTING
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
